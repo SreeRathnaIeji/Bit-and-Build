@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="community-exchange">
+        <h2>Community Exchange</h2>
+        <form id="exchangeForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="itemType">Clothing Item:</label>
+            <input type="text" id="itemType" name="itemType" required>
+
+            <label for="exchangeType">Exchange Type:</label>
+            <select id="exchangeType" name="exchangeType" required>
+                <option value="trade">Trade</option>
+                <option value="donate">Donate</option>
+                <option value="lend">Lend</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <button type="submit">Post Item</button>
+        </form>
+
+        <div id="exchangeList">
+            <h3>Posted Items</h3>
+            <ul id="itemList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
