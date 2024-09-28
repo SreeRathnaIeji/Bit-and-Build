@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Wardrobe Tracker</h1>
+        <ul class="Gender"> MEN's SECTION
+            <li>
+                <h3 onclick="toggleVisibility('T-shirts')">T-shirts</h3>
+                <div id="T-shirts" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="T-shirtCount">0</span></p>
+                    <button onclick="increment('T-shirtCount')">Add T-shirt</button>
+                    <button onclick="decrement('T-shirtCount')">Remove T-shirt</button>
+                    <p>Times Worn: <span id="T-shirtUsage">0</span></p>
+                    <button onclick="increment('T-shirtUsage')">Worn Once More</button>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleVisibility('pants')">Pants</h3>
+                <div id="pants" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="pantCount">0</span></p>
+                    <button onclick="increment('pantCount')">Add Pant</button>
+                    <button onclick="decrement('pantCount')">Remove Pant</button>
+                    <p>Times Worn: <span id="pantUsage">0</span></p>
+                    <button onclick="increment('pantUsage')">Worn Once More</button>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleVisibility('jackets')">Jackets</h3>
+                <div id="jackets" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="jacketCount">0</span></p>
+                    <button onclick="increment('jacketCount')">Add Jacket</button>
+                    <button onclick="decrement('jacketCount')">Remove Jacket</button>
+                    <p>Times Worn: <span id="jacketUsage">0</span></p>
+                    <button onclick="increment('jacketUsage')">Worn Once More</button>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleVisibility('suits')">Suits</h3>
+                <div id="suits" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="suitCount">0</span></p>
+                    <button onclick="increment('suitCount')">Add Suit</button>
+                    <button onclick="decrement('suitCount')">Remove Suit</button>
+                    <p>Times Worn: <span id="suitUsage">0</span></p>
+                    <button onclick="increment('suitUsage')">Worn Once More</button>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleVisibility('casuals')">Casual Wear</h3>
+                <div id="casuals" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="casualCount">0</span></p>
+                    <button onclick="increment('casualCount')">Add Casuals</button>
+                    <button onclick="decrement('casualCount')">Remove Casuals</button>
+                    <p>Times Worn: <span id="casualUsage">0</span></p>
+                    <button onclick="increment('casualUsage')">Worn Once More</button>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="Gender"> WOMEN's SECTION
+            <li>
+                <h3 onclick="toggleVisibility('tops')">Tops</h3>
+                <div id="tops" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="topCount">0</span></p>
+                    <button onclick="increment('topCount')">Add Top</button>
+                    <button onclick="decrement('topCount')">Remove Top</button>
+                    <p>Times Worn: <span id="topUsage">0</span></p>
+                    <button onclick="increment('topUsage')">Worn Once More</button>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleVisibility('dresses')">Dresses</h3>
+                <div id="dresses" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="dressCount">0</span></p>
+                    <button onclick="increment('dressCount')">Add Dress</button>
+                    <button onclick="decrement('dressCount')">Remove Dress</button>
+                    <p>Times Worn: <span id="dressUsage">0</span></p>
+                    <button onclick="increment('dressUsage')">Worn Once More</button>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleVisibility('skirts')">Skirts</h3>
+                <div id="skirts" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="skirtCount">0</span></p>
+                    <button onclick="increment('skirtCount')">Add Skirt</button>
+                    <button onclick="decrement('skirtCount')">Remove Skirt</button>
+                    <p>Times Worn: <span id="skirtUsage">0</span></p>
+                    <button onclick="increment('skirtUsage')">Worn Once More</button>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleVisibility('pans')">Pants</h3>
+                <div id="pans" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="panCount">0</span></p>
+                    <button onclick="increment('panCount')">Add Pant</button>
+                    <button onclick="decrement('panCount')">Remove Pant</button>
+                    <p>Times Worn: <span id="panUsage">0</span></p>
+                    <button onclick="increment('panUsage')">Worn Once More</button>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleVisibility('wears')">Casual Wear</h3>
+                <div id="wears" class="toggle-section" style="display: none;">
+                    <p>Count: <span id="wearCount">0</span></p>
+                    <button onclick="increment('wearCount')">Add Casuals</button>
+                    <button onclick="decrement('wearCount')">Remove Casuals</button>
+                    <p>Times Worn: <span id="wearUsage">0</span></p>
+                    <button onclick="increment('wearUsage')">Worn Once More</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
